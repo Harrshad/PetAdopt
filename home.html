@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petadopt</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet/less" type="text/css" href="css/styles.less" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row sticky-top bg">
+        <div class="container mb-4">
+          <div class="sticky-top bg row align-items-center mt-5">
+            <div class="col-10">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text me-0"
+                    ><i class="bi bi-search"></i
+                  ></span>
+                </div>
+                <input
+                  class="form-control ms-0"
+                  type="search"
+                  placeholder="Search for pets/location/name"
+                  aria-label="Search"
+                />
+              </div>
+            </div>
+            <div class="col-2">
+              <i
+                class="bi bi-filter"
+                style="font-size: 2rem; color: #f48c06"
+              ></i>
+            </div>
+          </div>
+          <div class="row mt-4 justify-content-between">
+            <div class="col-3 pe-0">
+              <a href="dogfilt.html">
+                <button class="btnfil">
+                  Dogs<img src="img/DOG.png" class="filtlogo" />
+                </button>
+              </a>
+            </div>
+            <div class="col-3 pe-0">
+              <a href="catfilt.html">
+                <button class="btnfil1">
+                  Cats<img src="img/CAT.png" class="filtlogo" />
+                </button>
+              </a>
+            </div>
+            <div class="col-3 pe-0">
+              <a href="bird.html">
+                <button class="btnfil2">
+                  Birds<img src="img/bird.png" class="filtlogo" />
+                </button>
+              </a>
+            </div>
+            <div class="col-3 pe-0">
+              <a href="bunny.html">
+                <button class="btnfil3">
+                  Bunny<img src="img/bunny.png" class="filtlogo" />
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="container">
+          <div class="row gy-3">
+            <div class="col">
+              <a href="det.html" class="card-link">
+                <div class="card rounded" id="card-b">
+                  <div class="image-crop">
+                    <img src="img/cat1.png" class="card-img-top" alt="..." />
+                  </div>
+                  <div class="card-body px-0 py-0">
+                    <div class="container-fluid ps-1" id="cardbody">
+                      <div class="row">
+                        <div
+                          class="col-12 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <p class="fs-4 bold">Felix</p>
+                          <i
+                            class="bi bi-gender-male ms-1"
+                            style="font-size: 1rem; color: #f48c06"
+                          ></i>
+                        </div>
+                      </div>
+                      <div class="row mt-1">
+                        <div
+                          class="ps-1 pe-0 col-8 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <i
+                            class="bi bi-clock ms-2 mt-1"
+                            style="font-size: 0.9rem; color: #f48c06"
+                          ></i>
+                          <p class="ms-2" id="cardbodytxt1">9 months</p>
+                        </div>
+                        <div
+                          class="ps-1 mt-2 col-4 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <p class="ms-2 mb-0" id="cardbodytxt2">Burmilla</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="" class="card-link">
+                <div class="card rounded" id="card-b">
+                  <div class="image-crop">
+                    <img src="img/dog1.png" class="card-img-top" alt="..." />
+                  </div>
+                  <div class="card-body px-0 py-0">
+                    <div class="container-fluid ps-1" id="cardbody">
+                      <div class="row">
+                        <div
+                          class="col-12 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <p class="fs-4 bold">Max</p>
+                          <i
+                            class="bi bi-gender-male ms-1"
+                            style="font-size: 1rem; color: #f48c06"
+                          ></i>
+                        </div>
+                      </div>
+                      <div class="row mt-1">
+                        <div
+                          class="ps-1 pe-0 col-8 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <i
+                            class="bi bi-clock ms-2 mt-1"
+                            style="font-size: 0.9rem; color: #f48c06"
+                          ></i>
+                          <p class="ms-2" id="cardbodytxt1">2 months</p>
+                        </div>
+                        <div
+                          class="ps-1 mt-2 col-4 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <p class="ms-2 mb-0" id="cardbodytxt2">Labrador</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="" class="card-link">
+                <div class="card rounded" id="card-b">
+                  <div class="image-crop">
+                    <img src="img/cat2.png" class="card-img-top" alt="..." />
+                  </div>
+                  <div class="card-body px-0 py-0">
+                    <div class="container-fluid ps-1" id="cardbody">
+                      <div class="row">
+                        <div
+                          class="col-12 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <p class="fs-4 bold">Nala</p>
+                          <i
+                            class="bi bi-gender-female ms-1"
+                            style="font-size: 1rem; color: #f48c06"
+                          ></i>
+                        </div>
+                      </div>
+                      <div class="row mt-1">
+                        <div
+                          class="ps-1 pe-0 col-8 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <i
+                            class="bi bi-clock ms-2 mt-1"
+                            style="font-size: 0.9rem; color: #f48c06"
+                          ></i>
+                          <p class="ms-2" id="cardbodytxt1">2 months</p>
+                        </div>
+                        <div
+                          class="ps-1 mt-2 col-4 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <p class="ms-2 mb-0" id="cardbodytxt2">A.Curl</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="" class="card-link">
+                <div class="card rounded" id="card-b">
+                  <div class="image-crop">
+                    <img src="img/cat3.png" class="card-img-top" alt="..." />
+                  </div>
+                  <div class="card-body px-0 py-0">
+                    <div class="container-fluid ps-1" id="cardbody">
+                      <div class="row">
+                        <div
+                          class="col-12 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <p class="fs-4 bold">Luna</p>
+                          <i
+                            class="bi bi-gender-female ms-1"
+                            style="font-size: 1rem; color: #f48c06"
+                          ></i>
+                        </div>
+                      </div>
+                      <div class="row mt-1">
+                        <div
+                          class="ps-1 pe-0 col-8 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <i
+                            class="bi bi-clock ms-2 mt-1"
+                            style="font-size: 0.9rem; color: #f48c06"
+                          ></i>
+                          <p class="ms-2" id="cardbodytxt1">3 months</p>
+                        </div>
+                        <div
+                          class="ps-1 mt-2 col-4 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <p class="ms-2 mb-0" id="cardbodytxt2">Birman</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="" class="card-link">
+                <div class="card rounded" id="card-b">
+                  <div class="image-crop">
+                    <img src="img/dog2.png" class="card-img-top" alt="..." />
+                  </div>
+                  <div class="card-body px-0 py-0">
+                    <div class="container-fluid ps-1" id="cardbody">
+                      <div class="row">
+                        <div
+                          class="col-12 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <p class="fs-4 bold">Luke</p>
+                          <i
+                            class="bi bi-gender-male ms-1"
+                            style="font-size: 1rem; color: #f48c06"
+                          ></i>
+                        </div>
+                      </div>
+                      <div class="row mt-1">
+                        <div
+                          class="ps-1 pe-0 col-8 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <i
+                            class="bi bi-clock ms-2 mt-1"
+                            style="font-size: 0.9rem; color: #f48c06"
+                          ></i>
+                          <p class="ms-2" id="cardbodytxt1">2 months</p>
+                        </div>
+                        <div
+                          class="ps-1 mt-2 col-4 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <p class="ms-4 mb-0" id="cardbodytxt2">Corgi</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="" class="card-link">
+                <div class="card rounded" id="card-b">
+                  <div class="image-crop">
+                    <img
+                      src="img/Frame 17.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body px-0 py-0">
+                    <div class="container-fluid ps-1" id="cardbody">
+                      <div class="row">
+                        <div
+                          class="col-12 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <p class="fs-4 bold">Toma</p>
+                          <i
+                            class="bi bi-gender-male ms-1"
+                            style="font-size: 1rem; color: #f48c06"
+                          ></i>
+                        </div>
+                      </div>
+                      <div class="row mt-1">
+                        <div
+                          class="ps-1 pe-0 col-8 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <i
+                            class="bi bi-clock ms-2 mt-1"
+                            style="font-size: 0.9rem; color: #f48c06"
+                          ></i>
+                          <p class="ms-2" id="cardbodytxt1">6 months</p>
+                        </div>
+                        <div
+                          class="ps-1 mt-2 col-4 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <p class="ms-0 mb-0" id="cardbodytxt2">Tonkinese</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="" class="card-link">
+                <div class="card rounded" id="card-b">
+                  <div class="image-crop">
+                    <img
+                      src="img/Frame 18.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body px-0 py-0">
+                    <div class="container-fluid ps-1" id="cardbody">
+                      <div class="row">
+                        <div
+                          class="col-12 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <p class="fs-4 bold">Bob</p>
+                          <i
+                            class="bi bi-gender-male ms-1"
+                            style="font-size: 1rem; color: #f48c06"
+                          ></i>
+                        </div>
+                      </div>
+                      <div class="row mt-1">
+                        <div
+                          class="ps-1 pe-0 col-8 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <i
+                            class="bi bi-clock ms-2 mt-1"
+                            style="font-size: 0.9rem; color: #f48c06"
+                          ></i>
+                          <p class="ms-2" id="cardbodytxt1">2 months</p>
+                        </div>
+                        <div
+                          class="ps-1 mt-2 col-4 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <p class="ms-2 mb-0" id="cardbodytxt2">Bulldog</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="" class="card-link">
+                <div class="card rounded" id="card-b">
+                  <div class="image-crop">
+                    <img
+                      src="img/Frame 19.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body px-0 py-0">
+                    <div class="container-fluid ps-1" id="cardbody">
+                      <div class="row">
+                        <div
+                          class="col-12 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <p class="fs-4 bold">Milo</p>
+                          <i
+                            class="bi bi-gender-male ms-1"
+                            style="font-size: 1rem; color: #f48c06"
+                          ></i>
+                        </div>
+                      </div>
+                      <div class="row mt-1">
+                        <div
+                          class="ps-1 pe-0 col-8 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <i
+                            class="bi bi-clock ms-2 mt-1"
+                            style="font-size: 0.9rem; color: #f48c06"
+                          ></i>
+                          <p class="ms-2" id="cardbodytxt1">6 months</p>
+                        </div>
+                        <div
+                          class="ps-1 mt-2 col-4 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <p class="ms-2 mb-0" id="cardbodytxt2">W.Terrier</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="" class="card-link">
+                <div class="card rounded" id="card-b">
+                  <div class="image-crop">
+                    <img
+                      src="img/Frame 20.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body px-0 py-0">
+                    <div class="container-fluid ps-1" id="cardbody">
+                      <div class="row">
+                        <div
+                          class="col-12 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <p class="fs-4 bold">Amut</p>
+                          <i
+                            class="bi bi-gender-male ms-1"
+                            style="font-size: 1rem; color: #f48c06"
+                          ></i>
+                        </div>
+                      </div>
+                      <div class="row mt-1">
+                        <div
+                          class="ps-1 pe-0 col-8 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <i
+                            class="bi bi-clock ms-2 mt-1"
+                            style="font-size: 0.9rem; color: #f48c06"
+                          ></i>
+                          <p class="ms-2" id="cardbodytxt1">9 months</p>
+                        </div>
+                        <div
+                          class="ps-1 mt-2 col-4 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <p class="ms-4 mb-0" id="cardbodytxt2">Pug</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="" class="card-link">
+                <div class="card rounded" id="card-b">
+                  <div class="image-crop">
+                    <img
+                      src="img/Frame 21.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body px-0 py-0">
+                    <div class="container-fluid ps-1" id="cardbody">
+                      <div class="row">
+                        <div
+                          class="col-12 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <p class="fs-4 bold">Bella</p>
+                          <i
+                            class="bi bi-gender-female ms-1"
+                            style="font-size: 1rem; color: #f48c06"
+                          ></i>
+                        </div>
+                      </div>
+                      <div class="row mt-1">
+                        <div
+                          class="ps-1 pe-0 col-8 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <i
+                            class="bi bi-clock ms-2 mt-1"
+                            style="font-size: 0.9rem; color: #f48c06"
+                          ></i>
+                          <p class="ms-2" id="cardbodytxt1">2 months</p>
+                        </div>
+                        <div
+                          class="ps-1 mt-2 col-4 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <p class="ms-0 mb-0" id="cardbodytxt2">Khaomane</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="" class="card-link">
+                <div class="card rounded" id="card-b">
+                  <div class="image-crop">
+                    <img
+                      src="img/Frame 22.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body px-0 py-0">
+                    <div class="container-fluid ps-1" id="cardbody">
+                      <div class="row">
+                        <div
+                          class="col-12 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <p class="fs-4 bold">Mango</p>
+                          <i
+                            class="bi bi-gender-male ms-1"
+                            style="font-size: 1rem; color: #f48c06"
+                          ></i>
+                        </div>
+                      </div>
+                      <div class="row mt-1">
+                        <div
+                          class="ps-1 pe-0 col-8 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <i
+                            class="bi bi-clock ms-2 mt-1"
+                            style="font-size: 0.9rem; color: #f48c06"
+                          ></i>
+                          <p class="ms-2" id="cardbodytxt1">9 months</p>
+                        </div>
+                        <div
+                          class="ps-1 mt-2 col-4 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <p class="ms-2 mb-0" id="cardbodytxt2">Macaw</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="" class="card-link">
+                <div class="card rounded" id="card-b">
+                  <div class="image-crop">
+                    <img src="img/Frame 4.png" class="card-img-top" alt="..." />
+                  </div>
+                  <div class="card-body px-0 py-0">
+                    <div class="container-fluid ps-1" id="cardbody">
+                      <div class="row">
+                        <div
+                          class="col-12 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <p class="fs-4 bold">Skye</p>
+                          <i
+                            class="bi bi-gender-female ms-1"
+                            style="font-size: 1rem; color: #f48c06"
+                          ></i>
+                        </div>
+                      </div>
+                      <div class="row mt-1">
+                        <div
+                          class="ps-1 pe-0 col-8 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <i
+                            class="bi bi-clock ms-2 mt-1"
+                            style="font-size: 0.9rem; color: #f48c06"
+                          ></i>
+                          <p class="ms-2" id="cardbodytxt1">6 months</p>
+                        </div>
+                        <div
+                          class="ps-1 mt-2 col-4 d-flex justify-content-start align-items-baseline"
+                          id="cardrow"
+                        >
+                          <p class="ms-2 mb-0" id="cardbodytxt2">Cuckatoo</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12"></div>
+            <div class="col-12"></div>
+            <div class="col-12"></div>
+            <div class="col-12"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row fixed-bottom" id="navbar">
+        <div class="container-fluid">
+          <div class="row d-flex justify-content-between mt-2">
+            <div class="col mx-2 d-flex justify-content-center">
+              <i class="bi bi-house-door-fill" id="logos"></i>
+            </div>
+            <div class="col mx-2 d-flex justify-content-center">
+              <i class="bi bi-heart" id="logos"></i>
+            </div>
+            <div class="col mx-2 d-flex justify-content-center">
+              <i class="bi bi-chat-square-dots" id="logos"></i>
+            </div>
+            <div class="col">
+              <a href="index.html">
+                <img
+                  src="img/logo2.png"
+                  id="logo1"
+                  alt="petadopt-logo"
+                  class="me-2"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const pet=[
+          {
+            cat :[
+            {
+          id : 1,
+          name : 'Felix',
+          age : '9months',
+          breed : 'Burmilla',
+
+         },
+         {
+          id :2,
+          name: 'Nala',
+          age : '2months',
+          breed : "A.Curl",
+        },
+        {
+          id : 3,
+          name: 'Luna',
+          age : '3months',
+          breed: 'Birman',
+        },
+        {
+            id : 4,
+            name : "Toma",
+            age : '6months',
+            breed : 'Tonkinese',
+
+        },
+        {
+            id : 5,
+            name : 'Bella',
+            age : '2months',
+            breed : 'Khaomane',
+        },
+
+
+        ],
+        dog :[
+        {
+          id : 1,
+          name : 'Max',
+          age : '2months',
+          breed : 'Labrador',
+
+         },
+         {
+          id :2,
+          name: 'Luke',
+          age : '2months',
+          breed : "Corgi",
+        },
+        {
+          id : 3,
+          name: 'Bob',
+          age : '2months',
+          breed: 'Bulldog',
+        },
+        {
+            id : 4,
+            name : "Milo",
+            age : '6months',
+            breed : 'W.terrier',
+
+        },
+        {
+            id : 5,
+            name : 'Amut',
+            age : '9months',
+            breed : 'Pug',
+        },
+        ],
+        bird :[
+         {
+          id : 1,
+          name : 'Mango',
+          age : '9months',
+          breed : 'Macaw',
+
+         },
+         {
+          id :2,
+          name: 'Skye',
+          age : '6months',
+          breed : "Cuckatoo",
+        }
+        ]
+    }
+            ]   
+    </script>
+  </body>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/less" ></script> -->
+  <script src="js/less.js"></script>
+</html>

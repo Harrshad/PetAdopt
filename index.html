@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petadopt</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet/less" type="text/css" href="css/styles.less" />
+</head>
+<body>
+    <div class="container-sm" id="land">
+        <div class="row d-flex justify-content-end ">
+            <img src="img/logo2.png" id="logo" alt="petadopt-logo" class="mt-2">
+        </div>
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container">
+                    <div class="row d-flex justify-content-center align-items-center my-5">
+            
+                        <span class="land-txt1">Discover Your New</span>
+                        <span id="land-txt2">Best Friend</span>
+                    
+                </div>
+                    <div class="row">
+                        <div class="col-md-12 mb-5">
+                            <img src="img/Illust.png" class="img-fluid"> 
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <p id="land-txtbt"> Step into a world of wagging tails and joyful purrs.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <div class="container">
+                    <div class="row d-flex justify-content-center align-items-center my-5">
+            
+                        <span class="land-txt1">Simple Adoption Process Like a </span>
+                        <span id="land-txt2">Breeze</span>
+                    
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mb-5">
+                            <img src="img/Ink.png" class="img-fluid"> 
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <p id="land-txtbt">Bringing your new furry family member home is as smooth as it can be.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <div class="container">
+                    <div class="row d-flex justify-content-center align-items-center my-5">
+            
+                        <span class="land-txt1">Unconditional Love</span>
+                        <span id="land-txt2">Awaits For You</span>
+                    
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mb-5">
+                            <img src="img/Illustration - Delete Confirmation.png" class="img-fluid"> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p id="land-txtbt" class="mt-3">AdoptPet is here to connect you with your perfect furry companion.</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="container-fluid">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row mt-5 justify-content-center">
+            <a class=" d-flex justify-content-center align-items-center card-link" href="home.html" id="btn-primary">
+                <span class="ms-4">Adopt Now</span>
+                <span><i class="bi bi-arrow-right-circle-fill ms-4" style="font-size: 2rem;"></i></span>
+              </a>
+           
+      </div>
+    </div>
+    
+       
+</body>
+<script>
+        var slideInterval = 5000;
+        function nextSlide() {
+          $('#myCarousel').carousel('next');
+        }
+        $(document).ready(function() {
+          $('#myCarousel').carousel({
+            interval: false 
+          });
+          
+          setInterval(nextSlide, slideInterval);
+        });
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</html>
